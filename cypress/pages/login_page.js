@@ -2,10 +2,6 @@
 
 export class LoginPage{
    
-    navigateToLoginPage() {
-       cy.visit('https://dashboard.foreman.mn/login/') 
-    }
-
     assertLoginLogo() {
         cy.get('img[src="https://static.foreman.mn/core/banners/foreman-blue.png"]')
         .should('be.visible')
