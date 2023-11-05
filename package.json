@@ -1,0 +1,15 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "Cypress Test Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gregory Wacker",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.4.0"
+  }
+}
