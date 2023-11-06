@@ -25,7 +25,7 @@ export class LoginPage{
             .should('contain', 'Password')
     }
 
-    enterPassword(){
+    enterPassword(password){
         cy.get(':nth-child(3) > .form-control').type('B@dDoggy3')
     }
 

@@ -13,15 +13,16 @@ let siteHeader = new SiteHeader()
 
 it('login/logout test', () =>{
 
+    cy.fixture('testdata').then(({ email, password}) => {  
     loginPage.assertLoginLogo();
     loginPage.assertUsernameFieldText();
-    loginPage.enterUsername('gregoryjwacker@gmail.com');
+    loginPage.enterUsername(email);
     loginPage.assertPasswordFieldText()
-    loginPage.enterPassword();
+    loginPage.enterPassword(password);
     loginPage.assertLoginBtnText();
     loginPage.clickSignInBtn();
     siteHeader.logout();
-    loginPage.assertLoginBtnText();
-    
+    loginPage.assertLoginBtnText(); 
     })
+  })
 })
